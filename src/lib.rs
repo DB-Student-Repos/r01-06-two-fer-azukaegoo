@@ -1,3 +1,10 @@
 pub fn twofer(name: &str) -> String {
-    unimplemented!("how many for {name}")
+    let fer = name;
+
+    let fer_two = match fer {
+        "" => String::from("One for you, one for me."),
+        name => format!("One for {}, one for me.", name),
+    };
+
+    fer_two
 }
