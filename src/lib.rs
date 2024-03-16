@@ -1,10 +1,8 @@
 pub fn twofer(name: &str) -> String {
-    let fer = name;
 
-    let fer_two = match fer {
+    let fer_two = match name {
         "" => String::from("One for you, one for me."),
-        name => format!("One for {}, one for me.", name),
+        _ => format!("One for {}, one for me.", name),
     };
-
     fer_two
 }
